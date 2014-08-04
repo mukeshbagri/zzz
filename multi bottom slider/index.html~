@@ -1,0 +1,66 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us">
+<head>
+<title>jCarousel Examples</title>
+<link href="skins/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="skins/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="skins/jquery.jcarousel.min.js"></script>
+<link rel="stylesheet" type="text/css" href="skins/1/skin.css" />
+<link rel="stylesheet" type="text/css" href="skins/2/skin.css" />
+
+<script type="text/javascript">
+
+jQuery(document).ready(function() {
+    // Initialise the first and second carousel by class selector.
+	// Note that they use both the same configuration options (none in this case).
+	jQuery('.first-and-second-carousel').jcarousel();
+	
+	// If you want to use a caoursel with different configuration options,
+	// you have to initialise it seperately.
+	// We do it by an id selector here.
+	jQuery('#third-carousel').jcarousel({
+        vertical: true
+    });
+});
+
+</script>
+
+</head>
+<body>
+<div id="wrap">
+   
+
+  <ul id="first-carousel" class="first-and-second-carousel jcarousel-skin-tango">
+    <li><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="150" height="280" alt="" border="1" /></li>
+    <li><img src="http://static.flickr.com/150/199481072_b4a0d09597_s.jpg" width="150" height="280" alt="" border="1"/></li>
+    <li><img src="http://static.flickr.com/57/199481087_33ae73a8de_s.jpg" width="150" height="280" alt="" border="1" /></li>
+    <li><img src="http://static.flickr.com/77/199481108_4359e6b971_s.jpg" width="150" height="280" alt="" border="1"/></li>
+    <li><img src="http://static.flickr.com/58/199481143_3c148d9dd3_s.jpg" width="150" height="280" alt="" border="1"/></li>
+    <li><img src="http://static.flickr.com/72/199481203_ad4cdcf109_s.jpg" width="150" height="280" alt="" border="1"/></li>
+    <li><img src="http://static.flickr.com/58/199481218_264ce20da0_s.jpg" width="150" height="280" alt="" border="1"/></li>
+    <li><img src="http://static.flickr.com/69/199481255_fdfe885f87_s.jpg" width="150" height="280" alt="" border="1"/></li>
+    <li><img src="http://static.flickr.com/60/199480111_87d4cb3e38_s.jpg" width="150" height="280" alt="" border="1"/></li>
+    <li><img src="http://static.flickr.com/70/229228324_08223b70fa_s.jpg" width="150" height="280" alt="" border="1"/></li>
+  </ul>
+  
+   
+  
+<div style="height:100px;"></div>
+
+
+  <ul id="second-carousel" class="first-and-second-carousel jcarousel-skin-ie7">
+    <li><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="150" height="280" alt="" border="1" /></li>
+    <li><img src="http://static.flickr.com/150/199481072_b4a0d09597_s.jpg" width="150" height="280" alt="" /></li>
+    <li><img src="http://static.flickr.com/57/199481087_33ae73a8de_s.jpg" width="150" height="280" alt="" /></li>
+    <li><img src="http://static.flickr.com/77/199481108_4359e6b971_s.jpg" width="150" height="280" alt="" /></li>
+    <li><img src="http://static.flickr.com/58/199481143_3c148d9dd3_s.jpg" width="150" height="280" alt="" /></li>
+    <li><img src="http://static.flickr.com/72/199481203_ad4cdcf109_s.jpg" width="150" height="280" alt="" /></li>
+    <li><img src="http://static.flickr.com/58/199481218_264ce20da0_s.jpg" width="150" height="280" alt="" /></li>
+    <li><img src="http://static.flickr.com/69/199481255_fdfe885f87_s.jpg" width="150" height="280" alt="" /></li>
+    <li><img src="http://static.flickr.com/60/199480111_87d4cb3e38_s.jpg" width="150" height="280" alt="" /></li>
+    <li><img src="http://static.flickr.com/70/229228324_08223b70fa_s.jpg" width="150" height="280" alt="" /></li>
+  </ul>
+  
+  
+</div>
+</body>
+</html>
